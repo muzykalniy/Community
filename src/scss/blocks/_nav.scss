@@ -1,4 +1,7 @@
-.header__nav {
+.header__nav.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .nav {
   font-size: 18px;

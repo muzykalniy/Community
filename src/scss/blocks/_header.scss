@@ -17,15 +17,11 @@
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    @include mediaBg() {
-      background-image: url("./../../img/hero/hero@2x.jpeg");
-    } // это миксин для ритина экранов
+    // @include mediaBg() {
+    //   background-image: url("./../../img/hero/hero@2x.jpeg");
+    // } // это миксин для ритина экранов
   }
   &__row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
