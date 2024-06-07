@@ -4,10 +4,27 @@
   font-size: 18px;
 }
 .nav__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 43px;
-}
-.active {
+  a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    color: #fff;
+
+    &:hover {
+      color: coral;
+    }
+  }
+  a.active {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    opacity: 0.3;
+  }
 }
