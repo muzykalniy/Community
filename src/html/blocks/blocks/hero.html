@@ -1,11 +1,18 @@
 <section class="hero">
 
 
-    <div class="hero__grid">
 
-        @@loop('blocks/slide.html', './data/content.json')
-        <!-- цикл луп, первый аргумент путь к шаблону(карточке), далее путь к карточке -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @@loop('blocks/slide.html', './data/content.json')
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+
+
 
     <button class="hero__btn">Create an Account</button>
 
