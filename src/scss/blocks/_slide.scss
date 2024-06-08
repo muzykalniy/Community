@@ -1,0 +1,45 @@
+.slide {
+}
+.slide__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+.slide__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+}
+.slide__title-main {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 119%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+    a::after {
+        content: "";
+        // далее absov задаем через сниппет оверлей
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        // мы растягиваем ссылку на всю карточку
+    }
+}
+.slide__content {
+    max-width: 736px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    text-align: center;
+    color: #fff;
+}
