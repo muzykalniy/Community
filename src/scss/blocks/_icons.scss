@@ -7,6 +7,7 @@ li .icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 .icon {
   // fill: transparent;
@@ -20,11 +21,17 @@ li .icon {
   width: 16px;
   height: 21px;
   fill: #fff;
+  &:hover {
+    fill: blueviolet;
+  }
 }
 .icon.icon--fa-behance {
   width: 21px;
   height: 21px;
   fill: #fff;
+  &:hover {
+    fill: blueviolet;
+  }
 }
 
 // .icon--heart-line {
