@@ -13,11 +13,13 @@
 </head>
 
 <body>
-	@@include('blocks/header.html')
-	<main class="main">
-		@@include('blocks/content.html')
-	</main>
-	@@include('blocks/footer.html')
+	<div class="container__wrapper-transition" id="container__transition">
+		@@include('blocks/header.html')
+		<main class="main">
+			@@include('blocks/content.html')
+		</main>
+		@@include('blocks/footer.html')
+	</div>
 	<script src="./js/index.bundle.js"></script>
 </body>
 
