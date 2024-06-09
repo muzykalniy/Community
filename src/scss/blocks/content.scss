@@ -1,0 +1,32 @@
+.section-content {
+    z-index: 1;
+    padding-top: 107px;
+    min-height: 100vh;
+    position: relative;
+    background-color: #2f1893;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-image: url("./../../img/content/content-bg.png");
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include mediaBg() {
+            background-image: url("./../../img/content/content-bg.png");
+        } // это миксин для ритина экранов
+    }
+}
+.section__content-wrapper {
+}
+.section-content__title {
+}
+.section-content__title--main {
+}
+.section-content__grid {
+}

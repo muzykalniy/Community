@@ -1,7 +1,7 @@
 .header {
   z-index: 1;
   padding-top: 83px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background-color: #2f1893;
   display: flex;
@@ -22,9 +22,9 @@
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    // @include mediaBg() {
-    //   background-image: url("./../../img/hero/hero@2x.jpeg");
-    // } // это миксин для ритина экранов
+    @include mediaBg() {
+      background-image: url("./../../img/hero/hero@2x.jpeg");
+    } // это миксин для ритина экранов
   }
   &__row {
   }
