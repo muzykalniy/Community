@@ -14,19 +14,50 @@
         height: 100%;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background-image: url("./../../img/content/content-bg.png");
+        filter: contrast(110%) brightness(1.1) saturate(1.1);
         background-position: center center; /* x y */
         background-size: cover;
         background-repeat: no-repeat;
         @include mediaBg() {
-            background-image: url("./../../img/content/content-bg.png");
+            background-image: url("./../../img/content/content-bg@2x.png");
         } // это миксин для ритина экранов
     }
 }
 .section__content-wrapper {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 29px;
 }
 .section-content__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
 }
 .section-content__title--main {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff !important;
 }
 .section-content__grid {
+    max-width: 775px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
 }
