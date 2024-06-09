@@ -14,13 +14,23 @@
 
 <body>
 	<div class="container__wrapper-transition" id="container__transition">
-		@@include('blocks/header.html')
+		<div class="page" id="page1">
+			@@include('blocks/header.html')
+		</div>
 		<main class="main">
-			@@include('blocks/content.html')
+			<div class="page" id="page2">
+				@@include('blocks/content.html')
+			</div>
+			<div class="page" id="page3">
+				@@include('blocks/features.html')
+			</div>
+			<!-- Additional pages can be included here -->
 		</main>
 	</div>
 	@@include('blocks/footer.html')
+
 	<script src="./js/index.bundle.js"></script>
+
 </body>
 
 </html>

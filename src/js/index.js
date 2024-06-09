@@ -29,13 +29,12 @@ let currentPage = 1;
 let isTransitioning = false;
 
 function goToPage(pageNumber) {
-  if (isTransitioning || pageNumber === currentPage) return;
+  const totalPages = document.querySelectorAll(".page").length;
+  if (isTransitioning || pageNumber < 1 || pageNumber > totalPages) return;
+
   const container = document.getElementById("container__transition");
-  if (pageNumber === 1) {
-    container.style.transform = "translateY(0)";
-  } else {
-    container.style.transform = "translateY(-50%)";
-  }
+  const offset = (pageNumber - 1) * 100;
+  container.style.transform = `translateY(-${offset}vh)`;
   currentPage = pageNumber;
   isTransitioning = true;
   setTimeout(() => {
@@ -43,12 +42,24 @@ function goToPage(pageNumber) {
   }, 500); // Duration of the transition
 }
 
-window.addEventListener("wheel", (event) => {
+function handleWheel(event) {
   if (isTransitioning) return;
-  if (event.deltaY > 0) {
-    goToPage(2);
-  } else {
-    goToPage(1);
+  const deltaY = event.deltaY;
+  if (deltaY > 0) {
+    goToPage(currentPage + 1);
+  } else if (deltaY < 0) {
+    goToPage(currentPage - 1);
+  }
+}
+
+window.addEventListener("wheel", handleWheel);
+
+window.addEventListener("keydown", function(event) {
+  if (isTransitioning) return;
+  if (event.key === "ArrowDown") {
+    goToPage(currentPage + 1);
+  } else if (event.key === "ArrowUp") {
+    goToPage(currentPage - 1);
   }
 });
 

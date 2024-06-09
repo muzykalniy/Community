@@ -1,0 +1,36 @@
+.section-features {
+    z-index: 1;
+    padding-top: 158px;
+    min-height: 100vh;
+    position: relative;
+    background-color: #2f1893;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 58px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+        background-image: url("./../../img/landing/landing-bg.png");
+        filter: contrast(110%) brightness(1.1) saturate(1.1);
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+        // @include mediaBg() {
+        //     background-image: url("./../../img/landing/landing-bg@2x.jpeg");
+        // } // это миксин для ритина экранов
+    }
+}
+.section-features__title {
+}
+.section-features-content {
+}
+.features__cards--wrapper {
+}

@@ -18,9 +18,9 @@
         background-position: center center; /* x y */
         background-size: cover;
         background-repeat: no-repeat;
-        @include mediaBg() {
-            background-image: url("./../../img/content/content-bg@2x.png");
-        } // это миксин для ритина экранов
+        // @include mediaBg() {
+        //     background-image: url("./../../img/content/content-bg@2x.png");
+        // } // это миксин для ритина экранов
     }
 }
 .section__content-wrapper {

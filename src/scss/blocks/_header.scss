@@ -23,9 +23,9 @@
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    @include mediaBg() {
-      background-image: url("./../../img/landing/landing-bg@2x.jpeg");
-    } // это миксин для ритина экранов
+    // @include mediaBg() {
+    //   background-image: url("./../../img/landing/landing-bg@2x.jpeg");
+    // } // это миксин для ритина экранов
   }
   &__row {
   }
