@@ -25,6 +25,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // бесшовный переход между страницами вьюпорта
+
 let currentPage = 1;
 let isTransitioning = false;
 
@@ -53,16 +54,6 @@ function handleWheel(event) {
 }
 
 window.addEventListener("wheel", handleWheel);
-
-window.addEventListener("keydown", function(event) {
-  if (isTransitioning) return;
-  if (event.key === "ArrowDown") {
-    goToPage(currentPage + 1);
-  } else if (event.key === "ArrowUp") {
-    goToPage(currentPage - 1);
-  }
-});
-
 // Мобильная навигация
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();

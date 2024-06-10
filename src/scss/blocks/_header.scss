@@ -1,14 +1,12 @@
 .header {
   z-index: 1;
   padding-top: 83px;
-  min-height: 100vh;
+  min-height: 100vh; /* Обеспечиваем 100vh */
+  height: 100vh; /* Обеспечиваем 100vh */
   position: relative;
   background-color: #2f1893;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 58px;
+  flex-direction: column; /* Для правильного расположения элементов */
 
   &::before {
     content: "";

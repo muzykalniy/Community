@@ -1,9 +1,13 @@
 .section-content {
     z-index: 1;
-    padding-top: 107px;
-    min-height: 100vh;
+    padding-top: 168px;
+    min-height: 100vh; /* Обеспечиваем минимальную высоту 100vh */
+    height: 100vh; /* Устанавливаем высоту 100vh */
     position: relative;
     background-color: #2f1893;
+    display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
+    flex-direction: column; /* Элементы выстраиваются вертикально */
+    justify-content: center; /* Центрируем содержимое по вертикали */
 
     &::before {
         content: "";

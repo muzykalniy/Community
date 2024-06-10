@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+
   background-color: rgb(39, 39, 39);
 }
 
@@ -36,5 +37,7 @@ pre.code {
 }
 .container__wrapper-transition {
   transition: transform 0.5s ease-in-out;
+}
+.page {
   min-height: 100vh;
 }
