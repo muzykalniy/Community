@@ -4,7 +4,7 @@ import Swiper from "swiper/bundle";
 // import styles bundle
 import "swiper/css/bundle";
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper__hero", {
   cssMode: true,
 
   navigation: {
@@ -24,36 +24,6 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30, // Расстояние между слайдами (по желанию)
 });
 
-// бесшовный переход между страницами вьюпорта
-
-let currentPage = 1;
-let isTransitioning = false;
-
-function goToPage(pageNumber) {
-  const totalPages = document.querySelectorAll(".page").length;
-  if (isTransitioning || pageNumber < 1 || pageNumber > totalPages) return;
-
-  const container = document.getElementById("container__transition");
-  const offset = (pageNumber - 1) * 100;
-  container.style.transform = `translateY(-${offset}vh)`;
-  currentPage = pageNumber;
-  isTransitioning = true;
-  setTimeout(() => {
-    isTransitioning = false;
-  }, 500); // Duration of the transition
-}
-
-function handleWheel(event) {
-  if (isTransitioning) return;
-  const deltaY = event.deltaY;
-  if (deltaY > 0) {
-    goToPage(currentPage + 1);
-  } else if (deltaY < 0) {
-    goToPage(currentPage - 1);
-  }
-}
-
-window.addEventListener("wheel", handleWheel);
 // Мобильная навигация
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();

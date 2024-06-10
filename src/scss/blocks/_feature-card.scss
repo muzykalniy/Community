@@ -1,0 +1,32 @@
+.feature__card {
+    z-index: 999;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon.icon--fa-commenting-o {
+    width: 37.6px;
+    height: 37.6px;
+    fill: #fff;
+}
+.card__title {
+    margin-top: 29px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.card__content {
+    margin-top: 16px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #fff;
+}
