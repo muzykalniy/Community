@@ -15,11 +15,14 @@
 <body>
 	<div class="container__wrapper-transition" id="container__transition">
 		@@include('blocks/header.html')
+		</section>
 		<main class="main">
-
-			@@include('blocks/content.html')
-			@@include('blocks/features.html')
-
+			<section class="page" id="page1">
+				@@include('blocks/content.html')
+			</section>
+			<section class="page" id="page2">
+				@@include('blocks/features.html')
+			</section>
 			<!-- Additional pages can be included here -->
 		</main>
 	</div>
