@@ -67,16 +67,56 @@
 }
 .form-wrapper {
     width: 50%;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
 }
 .form__title-btns--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.form__title--sign-up {
-}
+
 .btn-sign {
+    display: inline-block;
+    width: 50%;
+    padding: 17px 50px;
+
+    border-bottom: 3px solid #ebeaed;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
 }
-.form__title--log-in {
-}
+
 .btn-log {
+    display: inline-block;
+    width: 50%;
+    display: inline-block;
+
+    padding: 17px 50px;
+
+    border-bottom: 3px solid #ebeaed;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
 }
 .form__content--wrapper {
 }
