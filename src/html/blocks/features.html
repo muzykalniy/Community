@@ -1,11 +1,16 @@
 <section class="section-features">
-    <div class="container-right-55">
+    <div class="container">
         <!-- Swiper -->
-        <div class="swiper swiper__features">
-            <div class="swiper-wrapper">
-                @@loop('blocks/feature-card.html', './data/features.json')
+        <div class="features__wrapper">
+            <div class="features__image">
+                <img class="feature__image--item" src="./../../img/features/mockup.png" alt="" draggable="false">
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper swiper__features">
+                <div class="swiper-wrapper">
+                    @@loop('blocks/feature-card.html', './data/features.json')
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
 </section>

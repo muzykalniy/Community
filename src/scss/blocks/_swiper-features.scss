@@ -1,6 +1,6 @@
 .swiper.swiper__features {
-    width: 100%;
-    max-height: 500px;
+    width: 75%;
+    height: 600px;
     padding-right: 160px !important;
 
     .swiper-slide {
@@ -35,7 +35,7 @@
     .swiper-pagination-custom,
     .swiper-vertical > .swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-vertical {
-        right: 0;
+        bottom: 10%;
     } // чтобы свайпер паджинейшн лежал четко внутри слайдер
 
     .swiper-button-prev:after,
