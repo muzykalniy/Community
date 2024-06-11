@@ -30,7 +30,7 @@ var swiper = new Swiper(".swiper__features", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
 
   slidesPerView: 1, // Отображает 1 слайд одновременно
