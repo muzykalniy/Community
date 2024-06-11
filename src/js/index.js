@@ -30,6 +30,13 @@ var swiper = new Swiper(".swiper__features", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  mousewheel: true,
+  keyboard: true,
+
+  slidesPerView: 1, // Отображает 1 слайд одновременно
+  slidesPerGroup: 1, // Переключает по 1 слайду за раз
+  loop: true, // Позволяет бесконечную прокрутку
+  spaceBetween: 100, // Расстояние между слайдами (по желанию)
 });
 
 // Мобильная навигация
