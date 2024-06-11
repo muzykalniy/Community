@@ -8,6 +8,18 @@
     display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
     flex-direction: column; /* Элементы выстраиваются вертикально */
     justify-content: center; /* Центрируем содержимое по вертикали */
+    .container {
+        margin-left: 600px;
+        padding: 0 var(--container-padding);
+        max-width: var(--container-width);
+        width: 100%;
+
+        // &.container__header {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        // }
+    }
 
     &::before {
         content: "";

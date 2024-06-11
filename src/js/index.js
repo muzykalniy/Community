@@ -24,6 +24,14 @@ var swiper = new Swiper(".swiper__hero", {
   spaceBetween: 30, // Расстояние между слайдами (по желанию)
 });
 
+var swiper = new Swiper(".swiper__features", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // Мобильная навигация
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();

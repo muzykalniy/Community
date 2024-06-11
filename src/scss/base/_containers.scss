@@ -9,10 +9,9 @@
 .container {
   margin: 0 auto;
   padding: 0 var(--container-padding);
-
   max-width: var(--container-width);
   width: 100%;
-  flex: 1;
+
   // &.container__header {
   //   display: flex;
   //   justify-content: center;

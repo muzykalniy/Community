@@ -1,35 +1,9 @@
 <section class="section-features">
     <div class="container">
         <!-- Swiper -->
-        <div class="swiper-features MySwiper">
+        <div class="swiper swiper__features">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <h2 class="section-features__title">We Create Something New</h2>
-                    <div class="section-features-content">
-                        We have created a new product that will help designers, developers and companies create websites
-                        for their startups quickly and easily.
-                    </div>
-                    <div class="features__cards--wrapper">
-                        <div class="feature__cards--item">
-                            <svg class="icon icon--fa-commenting-o">
-                                <use href="./img/svgsprite/sprite.symbol.svg#fa-commenting-o"></use>
-                            </svg>
-                            <div class="card__title">30 New feature pages</div>
-                            <div class="card__content">Startup Framework contains components and complex blocks which
-                                can easily.
-                            </div>
-                        </div>
-                        <div class="feature__card-item">created</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+                @@loop('blocks/feature-card.html', './data/features.json')
             </div>
             <div class="swiper-pagination"></div>
         </div>

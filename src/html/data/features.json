@@ -1,0 +1,32 @@
+[
+  {
+    "features__title": "We Create Something New",
+    "features-content": "We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.",
+    "icon1": "./img/svgsprite/sprite.symbol.svg#fa-commenting-o",
+    "card__title1": "30 New feature pages",
+    "card__content1": "Startup Framework contains components and complex blocks which can easily.",
+    "icon2": "./img/svgsprite/sprite.symbol.svg#fa-diamond",
+    "card__title2": "Useful Symbol Components",
+    "card__content2": "Samples will show you the feeling on how to play around using the components."
+  },
+  {
+    "features__title": "We Create Something Old",
+    "features-content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ipsam consequuntur natus eius corporis voluptates dolorem quisquam quibusdam obcaecati, repellat sapiente dignissimos laudantium magnam reiciendis repudiandae. Ipsam minus a voluptatibus.",
+    "icon1": "./img/svgsprite/sprite.symbol.svg#fa-commenting-o",
+    "card__title1": "40 New feature pages",
+    "card__content1": "Startup Framework contains components and complex blocks which can easily.",
+    "icon2": "./img/svgsprite/sprite.symbol.svg#fa-diamond",
+    "card__title2": "Useless Symbol Components",
+    "card__content2": "Samples will show you the feeling on how to play around using the components."
+  },
+  {
+    "features__title": "We Create Something",
+    "features-content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod fugit quibusdam tempora excepturi similique libero placeat, repellendus sapiente quaerat?",
+    "icon1": "./img/svgsprite/sprite.symbol.svg#fa-commenting-o",
+    "card__title1": "50 New feature pages",
+    "card__content1": "Startup Framework contains components and complex blocks which can easily.",
+    "icon2": "./img/svgsprite/sprite.symbol.svg#fa-diamond",
+    "card__title2": "Symbol Components",
+    "card__content2": "Samples will show you the feeling on how to play around using the components."
+  }
+]
