@@ -1,11 +1,9 @@
 .section-plans {
+    padding-top: 100px;
     z-index: 999;
     position: relative;
     min-height: 100vh; /* Обеспечиваем минимальную высоту 100vh */
     background-color: #2f1893;
-    display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
-    flex-direction: column; /* Элементы выстраиваются вертикально */
-    justify-content: center; /* Центрируем содержимое по вертикали */
 
     &::before {
         content: "";
@@ -30,10 +28,30 @@
 }
 
 .plans__header {
+    margin-bottom: 55px;
+    display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
+    flex-direction: column; /* Элементы выстраиваются вертикально */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center;
+    gap: 30px;
 }
 .section-plans--title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
 }
 .section-plans--content {
+    width: 50%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    text-align: center;
+    color: #fff;
 }
 .plans__cards-wrapper {
 }
