@@ -1,12 +1,8 @@
 .footer {
 	background-color: rgb(39, 39, 39);
 	padding: 50px 0;
-	font-size: 32px;
-	color: #fff;
 
-	h1 {
-		font-size: 32px;
-	}
+	color: #fff;
 
 	a {
 		// color: var(--link-color);
@@ -20,6 +16,39 @@
 }
 
 .footer__copyright {
-	padding: 10px 0;
+	font-family: var(--font-family);
+	font-weight: 400;
 	font-size: 16px;
+	line-height: 162%;
+	text-align: right;
+	color: #fff;
+}
+
+.footer {
+	background-color: #2f1893;
+}
+
+.footer__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__title {
+}
+.footer__links {
+}
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 27px;
+}
+
+.footer__footer {
+}
+.footer__nav {
+}
+.footer__nav-items {
+}
+.footer__copyright {
 }

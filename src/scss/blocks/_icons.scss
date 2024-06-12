@@ -32,6 +32,30 @@ li .icon {
     fill: blueviolet;
   }
 }
+.icon.icon--footer1 {
+  width: 17px;
+  height: 26px;
+  fill: #fff;
+  &:hover {
+    fill: blueviolet;
+  }
+}
+.icon.icon--footer2 {
+  width: 11px;
+  height: 26px;
+  fill: #fff;
+  &:hover {
+    fill: blueviolet;
+  }
+}
+.icon.icon--footer3 {
+  width: 24px;
+  height: 26px;
+  fill: #fff;
+  &:hover {
+    fill: blueviolet;
+  }
+}
 
 // .icon--heart-line {
 //   fill: rgb(241, 68, 131);
