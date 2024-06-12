@@ -1,0 +1,72 @@
+.section-cta {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Обеспечиваем 100vh */
+    height: 100vh; /* Обеспечиваем 100vh */
+    position: relative;
+    background-color: #2f1893;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-image: url("./../../img/call_to_action/cta-img.png");
+        filter: contrast(130%) brightness(1.1) saturate(1.1);
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // @include mediaBg() {
+        //   background-image: url("./../../img/landing/landing-bg@2x.jpeg");
+        // } // это миксин для ритина экранов
+    }
+}
+.cta-wrapper {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-cta__title {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+.section-cta__content {
+    margin-bottom: 58px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    text-align: center;
+    color: #fff;
+}
+.btns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.cta__img {
+    position: relative;
+    z-index: 5;
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: scale(1.1);
+        filter: contrast(130%) brightness(1.1) saturate(1.1);
+    }
+}

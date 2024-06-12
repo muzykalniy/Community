@@ -71,3 +71,25 @@
         background-color: blueviolet;
     }
 }
+
+.btn__cta-2 {
+    padding: 22px 50px;
+    border-radius: 100px;
+    background: #25dac5;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: #fff;
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in;
+    &:hover,
+    &:focus {
+        background-color: saturate($color: #25dac5, $amount: 50%);
+    }
+    &:active {
+        background-color: blueviolet;
+    }
+}
