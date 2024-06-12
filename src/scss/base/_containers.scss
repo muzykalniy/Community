@@ -11,6 +11,8 @@
   padding: 0 var(--container-padding);
   max-width: var(--container-width);
   width: 100%;
+  position: relative;
+  z-index: 9999;
 
   // &.container__header {
   //   display: flex;

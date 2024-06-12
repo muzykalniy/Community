@@ -1,0 +1,39 @@
+.section-plans {
+    z-index: 999;
+    position: relative;
+    min-height: 100vh; /* Обеспечиваем минимальную высоту 100vh */
+    background-color: #2f1893;
+    display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
+    flex-direction: column; /* Элементы выстраиваются вертикально */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+
+    &::before {
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-image: url("./../../img/pricing_table/prcing_table-bg.png");
+        filter: contrast(130%) brightness(1.1) saturate(1.1);
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // @include mediaBg() {
+        //     background-image: url("./../../img/content/content-bg@2x.png");
+        // } // это миксин для ритина экранов
+    }
+}
+
+.plans__header {
+}
+.section-plans--title {
+}
+.section-plans--content {
+}
+.plans__cards-wrapper {
+}
