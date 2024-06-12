@@ -1,0 +1,109 @@
+.form-wrapper {
+    width: 50%;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+}
+.form__title-btns--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-sign {
+    display: inline-block;
+    width: 50%;
+    padding: 17px 50px;
+
+    border-bottom: 3px solid #ebeaed;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+    &.active {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+}
+
+.btn-log {
+    display: inline-block;
+    width: 50%;
+    display: inline-block;
+
+    padding: 17px 50px;
+
+    border-bottom: 3px solid #ebeaed;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+}
+.form__content--wrapper {
+    padding: 74px 70px;
+}
+.form {
+    padding: 12px 24px;
+    margin-bottom: 30px;
+    border: 2px solid #ebeaed;
+    border-radius: 100px;
+}
+.form__input {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    color: #1e0e62;
+    &::placeholder {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 144%;
+        color: rgba(21, 20, 57, 0.4);
+    }
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #141414;
+    opacity: 0.1;
+}
+
+.separator-text {
+    padding: 0 14.5px;
+
+    white-space: nowrap;
+
+    opacity: 0.3;
+    font-family: var(--font-accent);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #141414;
+}

@@ -28,3 +28,46 @@
         background-color: blueviolet;
     }
 }
+
+.form__btn-1 {
+    padding: 12px 60px;
+    border-radius: 100px;
+    background: #25dac5;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: #fff;
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in;
+    &:hover,
+    &:focus {
+        background-color: saturate($color: #25dac5, $amount: 50%);
+    }
+    &:active {
+        background-color: blueviolet;
+    }
+}
+.form__btn-2 {
+    padding: 12px 70px;
+    border-radius: 100px;
+    background: #1da1f2;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: #fff;
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in;
+    &:hover,
+    &:focus {
+        background-color: saturate($color: #1da1f2, $amount: 75%);
+    }
+    &:active {
+        background-color: blueviolet;
+    }
+}

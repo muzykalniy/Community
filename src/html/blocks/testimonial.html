@@ -1,9 +1,11 @@
 <section class="section-testimonial">
-    <h2 class="visually-hidden">title</h2>
+
     <div class="container">
-        <h2 class="section-testimonial__title">title</h2>
+        <h2 class="section-testimonial__title">Our Happy Clients</h2>
         <div class="section-testimonial__grid">
-            Content
+            @@loop('blocks/testimonial-item.html', './data/testimonials.json')
         </div>
+
     </div>
+
 </section>
