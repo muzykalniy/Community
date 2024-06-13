@@ -14,6 +14,10 @@
         border: 2px solid #fff;
         background: transparent;
         opacity: 0.3; // отменяем опасити что все кружки сделать одинакового цвета
+        @include mobile {
+            width: 8px;
+            height: 8px;
+        }
     }
     & .swiper-pagination-bullet-active {
         background-color: #fff;
@@ -35,7 +39,7 @@
     .swiper-button-prev:after,
     .swiper-button-next:after {
         font-weight: 400;
-        font-size: 30px;
+        font-size: clamp(0.9375rem, 0.6597rem + 1.3889vw, 1.875rem);
         width: 11px;
         height: 35px;
         color: #fff;
@@ -78,4 +82,7 @@
     line-height: 145%;
     text-align: center;
     color: #fff;
+    @include mobile {
+        max-width: 70%;
+    }
 }

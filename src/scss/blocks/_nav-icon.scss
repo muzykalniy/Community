@@ -8,7 +8,8 @@
   --line-height: 4px;
   --spacing: 6px;
 
-  --color: #000;
+  --color: #2f1893;
+  opacity: 0.6;
   --radius: 4px;
 
   /* Fixed height and width */
@@ -22,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-icon {

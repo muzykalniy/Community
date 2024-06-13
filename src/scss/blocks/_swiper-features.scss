@@ -48,3 +48,11 @@
         opacity: 0.3;
     }
 }
+@include mobile {
+    .swiper-pagination {
+        position: relative;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
