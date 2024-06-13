@@ -13,7 +13,7 @@
     border-radius: 10px;
     transition: all 0.2s ease-in;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         filter: contrast(130%) brightness(1.1) saturate(1.1);
     }
 }
@@ -25,7 +25,7 @@
     margin-bottom: 44px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 58px;
+    font-size: clamp(1.75rem, 1.1944rem + 2.7778vw, 3.625rem);
     line-height: 121%;
     letter-spacing: -0.02em;
     color: #fff;
@@ -43,7 +43,7 @@
 li {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.6759rem + 0.3704vw, 1rem);
     line-height: 162%;
     color: #fff;
     opacity: 0.7;

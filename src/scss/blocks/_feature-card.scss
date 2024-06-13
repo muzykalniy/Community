@@ -1,32 +1,27 @@
 .feature__card {
     z-index: 999;
-
     display: block;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.icon.icon--item1 {
-    width: 37.6px;
-    height: 37.6px;
-    fill: #fff;
-}
+.icon.icon--item1,
 .icon.icon--item2 {
     width: 37.6px;
     height: 37.6px;
     fill: #fff;
+    @include tablet {
+        width: 27.6px;
+        height: 27.6px;
+    }
 }
-.icon.icon--fa-diamond {
-    width: 37.6px;
-    height: 37.6px;
-    fill: #fff;
-}
+
 .card__title {
-    margin-top: 29px;
+    margin-top: 10px;
 
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 14px;
+    font-size: clamp(0.625rem, 0.5509rem + 0.3704vw, 0.875rem);
     line-height: 186%;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -37,7 +32,7 @@
 
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.625rem, 0.5139rem + 0.5556vw, 1rem);
     line-height: 162%;
     color: #fff;
 }

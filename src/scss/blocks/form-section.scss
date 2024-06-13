@@ -8,6 +8,7 @@
     display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
     flex-direction: column; /* Элементы выстраиваются вертикально */
     justify-content: center; /* Центрируем содержимое по вертикали */
+
     .container {
         display: flex;
         flex-direction: column;
@@ -28,9 +29,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 1;
-        // @include mediaBg() {
-        //     background-image: url("./../../img/content/content-bg@2x.png");
-        // } // это миксин для ритина экранов
     }
 }
 
@@ -41,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 130px;
+    gap: 100px;
 }
 .form-content {
     width: 50%;
@@ -53,7 +51,7 @@
 .section-form__title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 42px;
+    font-size: clamp(1.25rem, 0.8426rem + 2.037vw, 2.625rem);
     line-height: 124%;
     letter-spacing: -0.01em;
     color: #fff;
@@ -61,7 +59,7 @@
 .section-form__grid {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.6759rem + 0.3704vw, 1rem);
     line-height: 162%;
     color: #fff;
 }

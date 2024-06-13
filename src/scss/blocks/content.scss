@@ -2,7 +2,6 @@
     z-index: 1;
 
     min-height: 100vh; /* Обеспечиваем минимальную высоту 100vh */
-
     position: relative;
     background-color: #2f1893;
     display: flex; /* Устанавливаем flexbox для правильного выравнивания содержимого */
@@ -22,10 +21,6 @@
         background-position: center center; /* x y */
         background-size: cover;
         background-repeat: no-repeat;
-
-        // @include mediaBg() {
-        //     background-image: url("./../../img/content/content-bg@2x.png");
-        // } // это миксин для ритина экранов
     }
 }
 .section__content-wrapper {
@@ -40,7 +35,7 @@
 .section-content__title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 0.713rem + 0.1852vw, 0.875rem);
     line-height: 186%;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -50,17 +45,20 @@
 .section-content__title--main {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 58px;
+    font-size: clamp(1.5rem, 0.8704rem + 3.1481vw, 3.625rem);
     line-height: 121%;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fff !important;
+    @include tablet {
+        max-width: 60%;
+    }
 }
 .section-content__grid {
     max-width: 775px;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 156%;
     text-align: center;
     color: #fff;

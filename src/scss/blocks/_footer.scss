@@ -2,15 +2,14 @@
 	padding: 50px 0 45px;
 	background-color: #2f1893;
 	color: #fff;
+	@include tablet {
+		padding: 40px 15px 35px;
+	}
 
 	a {
 		// color: var(--link-color);
 		color: #fff;
 		text-decoration: underline;
-	}
-
-	@media (max-width: 1200px) {
-		font-size: 26px;
 	}
 }
 
@@ -21,11 +20,15 @@
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+	@include tablet {
+		margin-bottom: 30px;
+		padding-bottom: 32px;
+	}
 }
 .footer__title {
 	font-family: var(--font-family);
 	font-weight: 700;
-	font-size: 24px;
+	font-size: clamp(0.875rem, 0.6898rem + 0.9259vw, 1.5rem);
 	letter-spacing: -0.01em;
 	text-align: center;
 	color: #fff;
@@ -42,7 +45,7 @@
 		text-decoration: none;
 		font-family: var(--font-family);
 		font-weight: 400;
-		font-size: 16px;
+		font-size: clamp(0.75rem, 0.6759rem + 0.3704vw, 1rem);
 		line-height: 162%;
 		color: #fff;
 		&:hover {

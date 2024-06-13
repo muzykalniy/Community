@@ -12,7 +12,7 @@
 
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.8009rem + 0.3704vw, 1.125rem);
     line-height: 144%;
     text-align: center;
     color: #fff;
@@ -28,14 +28,58 @@
         background-color: blueviolet;
     }
 }
+.btn-sign {
+    display: inline-block;
+    width: 50%;
+    padding: 17px 50px;
 
+    border-bottom: 3px solid #ebeaed;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.5509rem + 0.3704vw, 0.875rem);
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+    &.active {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+}
+
+.btn-log {
+    display: inline-block;
+    width: 50%;
+    display: inline-block;
+
+    padding: 17px 50px;
+
+    border-bottom: 3px solid #ebeaed;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.5509rem + 0.3704vw, 0.875rem);
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(21, 20, 57, 0.4);
+    &:hover {
+        color: #1e0e62;
+        border-bottom: 3px solid #1e0e62;
+    }
+}
 .form__btn-1 {
     padding: 12px 60px;
     border-radius: 100px;
     background: #25dac5;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 144%;
     text-align: center;
     color: #fff;
@@ -56,7 +100,7 @@
     background: #1da1f2;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 144%;
     text-align: center;
     color: #fff;
@@ -78,7 +122,7 @@
     background: #25dac5;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 144%;
     text-align: center;
     color: #fff;
@@ -100,20 +144,14 @@
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-
     padding: 17px 60px;
-
     border-radius: 100px;
     border: 2px solid rgb(255, 255, 255, 0.3);
     background: transparent;
-
     font-family: var(--font-family);
     font-weight: 500;
-
     line-height: 130%;
-
     color: #fff;
-
     transition:
         background-color 0.2s ease-in,
         color 0.2s ease-in;

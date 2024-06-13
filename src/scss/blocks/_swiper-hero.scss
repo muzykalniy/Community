@@ -46,7 +46,7 @@
 .slide__title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8519rem + 0.7407vw, 1.5rem); // Font-size Clamp Generator
     letter-spacing: -0.01em;
     text-align: center;
     color: #fff;
@@ -54,7 +54,7 @@
 .slide__title-main {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 72px;
+    font-size: clamp(2.25rem, 1.5833rem + 3.3333vw, 4.5rem); // Font-size Clamp Generator
     line-height: 119%;
     letter-spacing: -0.01em;
     text-align: center;
@@ -74,7 +74,7 @@
     max-width: 736px;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(0.875rem, 0.7269rem + 0.7407vw, 1.375rem);
     line-height: 145%;
     text-align: center;
     color: #fff;
