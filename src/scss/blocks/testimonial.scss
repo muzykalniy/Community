@@ -6,22 +6,34 @@
     height: 100vh; /* Обеспечиваем 100vh */
     position: relative;
     background-color: #2f1893;
+    @include mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .section-testimonial__title {
     margin-bottom: 40px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 42px;
+    font-size: clamp(1.375rem, 1.0046rem + 1.8519vw, 2.625rem);
     line-height: 124%;
     letter-spacing: -0.01em;
     color: #fff;
+    @include mobile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 .section-testimonial__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+    @include mobile {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 .testimonial__item {
     padding: 35px 36px 28px 23px;
@@ -33,6 +45,10 @@
     border: 2px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 10px;
+    @include mobile {
+        gap: 13px;
+        padding: 15px 16px 18px 13px;
+    }
 }
 .testimonial__item-img {
 }
@@ -41,11 +57,14 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 13px;
+    @include mobile {
+        gap: 5px;
+    }
 }
 .testimonial__item-content {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 156%;
     color: #fff;
 }
