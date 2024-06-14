@@ -28,6 +28,7 @@
 
 .nav-icon {
   position: relative;
+  z-index: 99999;
   width: var(--width);
   height: var(--line-height);
   background-color: var(--color);
@@ -81,22 +82,16 @@
 .nav-icon.nav-icon--active::after {
   transform: rotate(-45deg);
 }
-.nav-icon.nav-icon--active {
-  position: relative;
-  z-index: 999 !important;
-}
-/* Layout */
 
+/* Layout */
 .mobile-nav-btn {
-  position: relative;
-  // z-index: 999;
   display: none;
   @include mobile {
-    z-index: 100000;
     display: block;
+    position: relative;
+    z-index: 9999999;
   }
 }
-
 // @media (max-width: 1000px) {
 // 	.mobile-nav-btn {
 // 		display: block;
