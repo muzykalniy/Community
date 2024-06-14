@@ -61,7 +61,23 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(initializeSwiper, 300);
 });
+// swiper для адаптива
+var swiperPlans = new Swiper(".mySwiperPrice", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
 
+  slidesPerView: 1, // Отображает 1 слайд одновременно
+  slidesPerGroup: 1, // Переключает по 1 слайду за раз
+  loop: true, // Позволяет бесконечную прокрутку
+  spaceBetween: 30, // Расстояние между слайдами (по желанию)
+});
 // Мобильная навигация
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();

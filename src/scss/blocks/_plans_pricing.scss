@@ -1,5 +1,6 @@
 .section-plans {
     padding-top: 50px;
+    padding-bottom: 60px;
     z-index: 999;
     position: relative;
     min-height: 100vh; /* Обеспечиваем минимальную высоту 100vh */
@@ -58,4 +59,11 @@
     line-height: 145%;
     text-align: center;
     color: #fff;
+}
+
+.plans__cards-wrapper-resp {
+    display: none;
+    @include mobile {
+        display: block;
+    }
 }

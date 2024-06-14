@@ -1,0 +1,28 @@
+.swiper.mySwiperPrice {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    & .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        border: 2px solid #fff;
+        background: transparent;
+        opacity: 0.3; // отменяем опасити что все кружки сделать одинакового цвета
+        @include mobile {
+            width: 8px;
+            height: 8px;
+        }
+    }
+    & .swiper-pagination-bullet-active {
+        background-color: #fff;
+        opacity: 1;
+    } // задаем свойства для активного кружка
+}
+@include mobile {
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: absolute;
+        top: 560px !important;
+    }
+}
