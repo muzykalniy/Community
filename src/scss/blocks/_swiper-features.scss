@@ -1,7 +1,11 @@
 .swiper.swiper__features {
     width: 75%;
     height: 600px;
+    margin-left: 300px;
     padding-right: 160px !important;
+    @include tablet {
+        margin-left: 400px;
+    }
     @include mobile {
         width: 100%;
         height: 400px;

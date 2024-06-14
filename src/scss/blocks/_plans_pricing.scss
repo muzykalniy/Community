@@ -1,4 +1,5 @@
 .section-plans {
+    z-index: 1;
     padding-top: 50px;
     padding-bottom: 60px;
     z-index: 999;
@@ -7,6 +8,7 @@
     background-color: #2f1893;
     @include tablet {
         padding-top: 30px;
+        z-index: 1;
     }
 
     &::before {
