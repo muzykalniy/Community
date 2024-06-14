@@ -81,13 +81,18 @@
 .nav-icon.nav-icon--active::after {
   transform: rotate(-45deg);
 }
-
+.nav-icon.nav-icon--active {
+  position: relative;
+  z-index: 999 !important;
+}
 /* Layout */
 
 .mobile-nav-btn {
-  z-index: 999;
+  position: relative;
+  // z-index: 999;
   display: none;
   @include mobile {
+    z-index: 100000;
     display: block;
   }
 }

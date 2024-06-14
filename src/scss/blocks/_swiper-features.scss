@@ -4,7 +4,7 @@
     margin-left: 300px;
     padding-right: 160px !important;
     @include tablet {
-        margin-left: 400px;
+        margin-left: 0;
     }
     @include mobile {
         width: 100%;
