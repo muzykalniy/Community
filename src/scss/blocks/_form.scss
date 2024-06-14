@@ -3,6 +3,10 @@
     height: 550px;
     border-radius: 10px;
     background: #fff;
+    @include mobile {
+        width: 80%;
+        height: 460px;
+    }
 }
 .form__title-btns--wrapper {
     display: flex;
@@ -12,6 +16,11 @@
 
 .form__content--wrapper {
     padding: 74px 70px;
+    @include mobile {
+        padding: 54px 50px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .form {
     padding: 12px 24px;

@@ -90,6 +90,7 @@
         color 0.2s ease-in;
     &:hover,
     &:focus {
+        transform: scale(1.01);
         background-color: saturate($color: #25dac5, $amount: 50%);
     }
     &:active {
@@ -111,6 +112,7 @@
         color 0.2s ease-in;
     &:hover,
     &:focus {
+        transform: scale(1.01);
         background-color: saturate($color: #1da1f2, $amount: 75%);
     }
     &:active {
