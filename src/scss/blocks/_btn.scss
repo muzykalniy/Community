@@ -22,6 +22,8 @@
         color 0.2s ease-in;
     &:hover,
     &:focus {
+        transform: scale(1.01);
+
         background-color: saturate($color: #482be7, $amount: 50%);
     }
     &:active {
