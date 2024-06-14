@@ -13,7 +13,6 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        padding-top: 30px;
     }
 }
 
@@ -41,9 +40,16 @@
     }
 }
 
-.card__title {
+.card__title-price {
     margin: 0px 0px 22px 0px;
-    font-size: clamp(1.125rem, 0.9398rem + 0.9259vw, 1.75rem);
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
+    font-family: var(--font-family);
+    font-weight: 700;
+
+    line-height: 186%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
     @include mobile {
         margin: 0px 0px 32px 0px;
     }

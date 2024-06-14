@@ -59,13 +59,13 @@
         color: #fff;
         opacity: 0.3;
     }
-}
-@include mobile {
-    .swiper-pagination-fraction,
-    .swiper-pagination-custom,
-    .swiper-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-        position: absolute;
-        top: 340px !important;
+    @include mobile {
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            position: absolute;
+            top: 340px !important;
+        }
     }
 }

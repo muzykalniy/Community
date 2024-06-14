@@ -58,6 +58,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@include mobile {
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 .footer__nav {
 }
@@ -86,4 +90,8 @@
 	line-height: 162%;
 	text-align: right;
 	color: #fff;
+	@include mobile {
+		margin: 0;
+		align-self: flex-start;
+	}
 }

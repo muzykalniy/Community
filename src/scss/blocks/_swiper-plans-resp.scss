@@ -16,13 +16,13 @@
         background-color: #fff;
         opacity: 1;
     } // задаем свойства для активного кружка
-}
-@include mobile {
-    .swiper-pagination-fraction,
-    .swiper-pagination-custom,
-    .swiper-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-        position: absolute;
-        top: 560px !important;
+    @include mobile {
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            position: absolute;
+            top: 530px !important;
+        }
     }
 }
