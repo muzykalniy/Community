@@ -87,7 +87,7 @@
 .mobile-nav-btn {
   display: none;
   @include mobile {
-    display: block;
+    display: none;
     position: relative;
     z-index: 9999999;
   }

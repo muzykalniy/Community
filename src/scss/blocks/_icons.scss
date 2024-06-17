@@ -23,6 +23,10 @@ li .icon {
   &:hover {
     fill: blueviolet;
   }
+  @include mobile {
+    width: 12px;
+    height: 17px;
+  }
 }
 .icon.icon--fa-behance {
   width: 21px;
@@ -30,6 +34,10 @@ li .icon {
   fill: #fff;
   &:hover {
     fill: blueviolet;
+  }
+  @include mobile {
+    width: 15px;
+    height: 20px;
   }
 }
 .icon.icon--footer1 {

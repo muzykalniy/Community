@@ -43,7 +43,7 @@ function initializeSwiper() {
       el: ".swiper-pagination",
       clickable: true,
     },
-    mousewheel: false,
+    mousewheel: true,
     keyboard: true,
     slidesPerView: 1,
     slidesPerGroup: 1,

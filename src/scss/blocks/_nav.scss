@@ -2,15 +2,9 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  @include tablet {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
 }
 .nav {
-  font-size: 18px;
+  font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
 }
 .nav__list {
   position: relative;
@@ -22,7 +16,7 @@
   a {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 144%;
     color: #fff;
 
@@ -33,7 +27,7 @@
   a.active {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.6389rem + 0.5556vw, 1.125rem);
     line-height: 144%;
     opacity: 0.3;
   }

@@ -1,28 +1,10 @@
-# Gulp сборка для верстки сайтов от [ВебКадеми](https://webcademy.ru)
+# Community layout
 
 - HTML,
 - SCSS,
 - Gulp,
 - JS
-
-Документация и примеры использования внутри.
-
-Установить зависимости:
-
-```
-npm i
-```
-
-Запустить в режиме разработки:
-
-```
-gulp
-```
-
-Собрать версию для публикации:
-
-```
-gulp docs
-```
+- Swiper
+- Responsive design
 
 [Смотреть демо](https://user.github.io/repo/)
