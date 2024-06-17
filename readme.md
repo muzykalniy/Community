@@ -7,4 +7,4 @@
 - Swiper
 - Responsive design
 
-[Смотреть демо](https://user.github.io/repo/)
+[Смотреть демо](https://muzykalniy.github.io/Community/)
